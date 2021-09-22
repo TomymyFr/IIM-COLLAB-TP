@@ -8,18 +8,22 @@ describe("Scenarios for page Claire", () => {
   });
 
   it("Assert the title contains the student name", () => {
-    cy.get('h2')
-      .invoke('text')
-      .should('match', /^ Claire Brisbart/)
-  })
+    cy.get("h2")
+      .invoke("text")
+      .should("match", /^ Claire Brisbart/);
+  });
 
   it("Check the css of the project buttons", () => {
-    cy.get('.project_link').should('have.css', 'background-color', 'rgb(137, 190, 243)')
-  })
+    cy.get(".project_link").should(
+      "have.css",
+      "background-color",
+      "rgb(137, 190, 243)"
+    );
+  });
 
   it("Verify if the URLs open a new tab", () => {
-    cy.get('.external_link').each(($a) => {
-      cy.get($a).should('have.attr', 'target', '_blank')
-    })
-  })
+    cy.get(".external_link").each(($a) => {
+      cy.get($a).should("have.attr", "target", "_blank");
+    });
+  });
 });
