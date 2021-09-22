@@ -64,7 +64,10 @@
         </div>
         <div class="personal">
           <h3>... pour moi</h3>
-          <a class="github" href="https://github.com/warsamefarah"
+          <a
+            class="github"
+            target="_blank"
+            href="https://github.com/warsamefarah"
             ><img src="../assets/github.png" alt="Github logo"
           /></a>
           <p>Jetez un oeil à tout mes repositories !</p>
