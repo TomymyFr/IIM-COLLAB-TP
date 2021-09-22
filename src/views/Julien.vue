@@ -18,6 +18,11 @@
       </h3>
     </div>
   </div>
+  <section>
+    <div id="disco">
+      <button id="lesgo">Let's go</button>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -25,27 +30,94 @@ const titles = [
   "Développeur Back-End",
   "Étudiant à l'IIM",
   "Alternant chez JoliCode",
-  "Fan d'OSS",
+  "Fan d'OSS"
 ];
 
 export default {
   name: "Julien.vue",
   data() {
     return {
-      title: "Développeur Back-End",
+      title: "Développeur Back-End"
     };
   },
   methods: {
     getRandomTitle() {
       this.title = titles.filter((el) => el !== this.title)[
         Math.floor(Math.random() * (titles.length - 1 ?? 0))
-      ];
-    },
+        ];
+    }
   },
+  mounted() {
+    let but = document.getElementById("lesgo");
+    let discofloor = document.getElementById("disco");
+
+    but.addEventListener("click", function() {
+      but.style.display = "none";
+
+      window.setInterval(disco, 500);
+
+      function disco() {
+        let x = Math.floor(Math.random() * 10);
+        let y = Math.floor(Math.random() * 10);
+
+        let colors = [
+          "red",
+          "orange",
+          "yellow",
+          "blue",
+          "indigo",
+          "purple",
+          "pink",
+          "cyan",
+          "lime"
+        ];
+
+        discofloor.style.backgroundColor = colors[x];
+        discofloor.style.borderColor = colors[y];
+      }
+
+      window.setInterval(dancers, 500);
+
+      function dancers() {
+        let dancer = document.createElement("p");
+
+        let species = Math.random();
+
+        if (species <= 0.5) {
+          dancer.innerHTML = "😺";
+        } else {
+          dancer.innerHTML = "🐶";
+        }
+
+        dancer.style.position = "absolute";
+        dancer.style.left = Math.random() * 92 + "%";
+        dancer.style.top = Math.random() * 89 + "%";
+        dancer.style.transform = "scale(" + Math.random() * 4 + ")";
+
+        let flip = Math.random();
+
+        if (flip <= 0.5) {
+          dancer.style.transform = "scaleX(-1)";
+        }
+
+        discofloor.appendChild(dancer);
+      }
+    });
+  }
 };
 </script>
 
 <style scoped>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+}
+
 .main-banner {
   background-image: url("https://images.unsplash.com/photo-1631116612648-81db5027112a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
   background-size: contain;
@@ -83,4 +155,33 @@ a {
 h3 a {
   color: #c2a929;
 }
+
+#disco {
+  background-color: black;
+  position: absolute;
+  min-height: 50vH;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  border: 25px solid white;
+}
+
+#disco button {
+  border: none;
+  padding: 2vH 10%;
+  background-color: #dbb2e3;
+  color: #294974;
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#disco button:focus {
+  outline: none;
+}
+
 </style>
