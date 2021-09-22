@@ -1,7 +1,7 @@
 describe("Scenarios for page Tom", () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080/tomb')
-  })
+    cy.visit("http://localhost:8080/tomb");
+  });
 
   it("Visits page /tomb on server", () => {
     cy.visit("http://localhost:8080/");
@@ -10,13 +10,13 @@ describe("Scenarios for page Tom", () => {
   });
 
   it("Check if div #tomb is rendering", () => {
-    cy.get('#tomb').should('be.visible');
-  })
+    cy.get("#tomb").should("be.visible");
+  });
   it("Check title h1 text is correct", () => {
     cy.get("h1").should("have.text", "Hello, je suis Tom");
   });
   it("Check if train is clickable and have animation", () => {
-    cy.get("#train").click({waitForAnimations: false});
-    cy.get("#train").should("have.css", "animation")
+    cy.get("#train").click({ waitForAnimations: false });
+    cy.get("#train").should("have.css", "animation");
   });
 });
