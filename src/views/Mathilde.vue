@@ -1,7 +1,7 @@
 <template>
     <div class="Mathilde">
         <div class="left">
-        <h1>Mathilde Asselin</h1>
+        <h1>Mathilde Asselin -</h1>
 
         <ul class="hobbies">
         <li>Développeuse web à l'IIM  💻</li>
@@ -11,7 +11,6 @@
 
         <p>N'hésitez pas à aller voir mon compte photo ci-dessous !</p>
         <button class="button" style="vertical-align:middle"><span><a href="https://www.instagram.com/math_jpg/">Compte Photo</a></span></button>
-        <!-- https://www.instagram.com/math_jpg/ -->
         </div>
 
         <div class="right">
@@ -45,7 +44,12 @@
 
     .left h1{
         font-size: 70px;
-        /* color: #319696; */
+    }
+
+    .left li{
+        font-size: 24px;
+        padding-left: 20px;
+        padding-bottom: 10px;
     }
 
     .left a{
@@ -68,33 +72,33 @@
         margin: 5px;
     }
 
-  .left .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+    .left .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
 
-.left .button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+    .left .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
 
-.left .button:hover span {
-  padding-right: 25px;
-}
+    .left .button:hover span {
+        padding-right: 25px;
+    }
 
-.left .button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+    .left .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 
-    .left .hobbies{
-
+    .left #Capa_1{
+        padding-bottom: 20px;
     }
 
     .right{
