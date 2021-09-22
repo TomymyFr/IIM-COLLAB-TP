@@ -18,7 +18,6 @@ const routes = [
     component: () => import("../views/Antonio.vue"),
   },
   {
-
     path: "/nicolasdegarrigues",
     name: "NicolasDG",
     component: () => import("../views/NicolasDG.vue"),
