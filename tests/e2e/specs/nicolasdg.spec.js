@@ -10,21 +10,16 @@ describe("Scenarios for page NicolasDG", () => {
   it("Should change project when the shuffle button is clicked", () => {
     cy.visit("http://localhost:8080/nicolasdegarrigues");
 
-    cy.get(".desc > a").should(
-      "have.text",
-      "Projet de groupe Harmonisation du code"
-    );
+    cy.get(".projects > a").should("have.text", "Projet de groupe");
 
     cy.get(".shuffle").click();
 
+    cy.get(".projects > a").should("not", "have.text", "Projet de groupe");
+  });
+
+  it("Should appear easter egg when the click button is clicked", () => {
     for (let i = 0; i < 10; i++) {
       cy.get(".counter").click();
     }
-
-    cy.get(".desc > a").should(
-      "not",
-      "have.text",
-      "API REST Associations du pôle"
-    );
   });
 });
