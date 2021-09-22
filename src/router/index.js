@@ -18,7 +18,6 @@ const routes = [
     component: () => import("../views/Antonio.vue"),
   },
   {
-
     path: "/nico",
     name: "Nico",
     component: () => import("../views/Nico.vue"),
@@ -31,7 +30,6 @@ const routes = [
     path: "/ahmed",
     name: "ahmed",
     component: () => import("../views/Ahmed.vue"),
-
   },
 ];
 
