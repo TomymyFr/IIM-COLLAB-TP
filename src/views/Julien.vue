@@ -30,28 +30,28 @@ const titles = [
   "Développeur Back-End",
   "Étudiant à l'IIM",
   "Alternant chez JoliCode",
-  "Fan d'OSS"
+  "Fan d'OSS",
 ];
 
 export default {
   name: "Julien.vue",
   data() {
     return {
-      title: "Développeur Back-End"
+      title: "Développeur Back-End",
     };
   },
   methods: {
     getRandomTitle() {
       this.title = titles.filter((el) => el !== this.title)[
         Math.floor(Math.random() * (titles.length - 1 ?? 0))
-        ];
-    }
+      ];
+    },
   },
   mounted() {
     let but = document.getElementById("lesgo");
     let discofloor = document.getElementById("disco");
 
-    but.addEventListener("click", function() {
+    but.addEventListener("click", function () {
       but.style.display = "none";
 
       window.setInterval(disco, 500);
@@ -69,7 +69,7 @@ export default {
           "purple",
           "pink",
           "cyan",
-          "lime"
+          "lime",
         ];
 
         discofloor.style.backgroundColor = colors[x];
@@ -103,7 +103,7 @@ export default {
         discofloor.appendChild(dancer);
       }
     });
-  }
+  },
 };
 </script>
 
@@ -159,7 +159,7 @@ h3 a {
 #disco {
   background-color: black;
   position: absolute;
-  min-height: 50vH;
+  min-height: 50vh;
   width: 99%;
   display: flex;
   align-items: center;
@@ -170,7 +170,7 @@ h3 a {
 
 #disco button {
   border: none;
-  padding: 2vH 10%;
+  padding: 2vh 10%;
   background-color: #dbb2e3;
   color: #294974;
   font-family: sans-serif;
@@ -183,5 +183,4 @@ h3 a {
 #disco button:focus {
   outline: none;
 }
-
 </style>
