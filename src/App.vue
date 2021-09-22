@@ -6,11 +6,9 @@
 
     <router-link to="/margaux">Margaux</router-link> |
 
-
     <router-link to="/sachag">SachaG</router-link> |
 
     <router-link to="/ahmed">Ahmed</router-link>
-
   </div>
   <router-view />
 </template>
