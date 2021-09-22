@@ -9,16 +9,20 @@
     <router-link to="/toml">TomL</router-link>
     <router-link to="/warsame">Warsamé</router-link> |
     <router-link to="/nico">Nico</router-link> |
-    <router-link to="/tomb">Tom B</router-link>
-    <router-link to="/axel">Axel</router-link>
+    <router-link to="/tomb">Tom B</router-link> |
+    <router-link to="/axel">Axel</router-link> |
     <router-link to="/margaux">Margaux</router-link> |
     <router-link to="/sachag">SachaG</router-link> |
     <router-link to="/ahmed">Ahmed</router-link> |
     <router-link to="/florent">Florent</router-link> |
     <router-link to="/sachaL">SachaL</router-link> |
-    <router-link to="/julien">Julien</router-link>
+    <router-link to="/Louis">Louis</router-link> |
+    <router-link to="/louna">Louna</router-link> |
+    <router-link to="/malo">Malo</router-link> |
+    <router-link to="/julien">Julien</router-link> |
     <router-link to="/nicolasdegarrigues">NicolasDG</router-link> |
     <router-link to="/lucasC">LucasC</router-link> |
+    <router-link to="/hugo">Hugo</router-link>
   </div>
   <router-view />
 </template>
