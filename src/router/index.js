@@ -22,7 +22,8 @@ const routes = [
     name: "Julien",
     component: () => import("../views/Julien.vue"),
   },
-  { path: "/sachag",
+  {
+    path: "/sachag",
     name: "SachaG",
     component: () => import("../views/SachaG.vue"),
   },
