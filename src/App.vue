@@ -6,7 +6,7 @@
     <router-link to="/antonio">Antonio</router-link> |
     <router-link to="/mathilde">Mathilde</router-link> |
     <router-link to="/claire">Claire</router-link> |
-    <router-link to="/toml">TomL</router-link>
+    <router-link to="/toml">TomL</router-link> |
     <router-link to="/warsame">Warsamé</router-link> |
     <router-link to="/nico">Nico</router-link> |
     <router-link to="/tomb">Tom B</router-link> |
