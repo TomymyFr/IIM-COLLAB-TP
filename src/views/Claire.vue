@@ -70,18 +70,18 @@
 export default {
   name: "Claire",
   data() {
-      return {
-        message: "Github 😺"
-      }
+    return {
+      message: "Github 😺",
+    };
   },
-  methods:{
-      changeEmoji(){
-          this.message = "Github 😻"
-      },
-      returnEmoji(){
-          this.message = "Github 😺"
-      }
-  }
+  methods: {
+    changeEmoji() {
+      this.message = "Github 😻";
+    },
+    returnEmoji() {
+      this.message = "Github 😺";
+    },
+  },
 };
 </script>
 
