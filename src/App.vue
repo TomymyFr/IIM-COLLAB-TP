@@ -4,6 +4,7 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/antonio">Antonio</router-link> |
     <router-link to="/toml">TomL</router-link>
+    <router-link to="/sachag">SachaG</router-link> |
     <router-link to="/ahmed">Ahmed</router-link>
   </div>
   <router-view />
