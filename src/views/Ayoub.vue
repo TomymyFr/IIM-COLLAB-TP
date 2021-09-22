@@ -1,12 +1,33 @@
 <template>
   <div class="main">
-    <h1>Hi, I'm El Guendouz Ayoub - <a href="https://github.com/ayoub9360" target="_blank">Ayoub9360</a> 👋</h1>
+    <h1>
+      Hi, I'm El Guendouz Ayoub -
+      <a href="https://github.com/ayoub9360" target="_blank">Ayoub9360</a> 👋
+    </h1>
     <h3>I am a third year student in web development !</h3>
-    <p>🔭 I’m currently working at <a href="https://www.spendesk.com" target="_blank">Spendesk</a></p>
-    <p>👨‍💻 All of my projects are available in my <a href="https://www.elguendouz-ayoub.com" target="_blank">website</a></p>
-    <p>📫 How to reach me <a href="mailto:ayoub.elguendouz@gmail.com" target="_blank">ayoub.elguendouz@gmail.com</a></p>
-    <p>📄 Know about my experiences with my <a href="https://elguendouz-ayoub.com/assets/El_Guendouz_Ayoub_CV.pdf" target="_blank">resume</a></p>
-    <hr>
+    <p>
+      🔭 I’m currently working at
+      <a href="https://www.spendesk.com" target="_blank">Spendesk</a>
+    </p>
+    <p>
+      👨‍💻 All of my projects are available in my
+      <a href="https://www.elguendouz-ayoub.com" target="_blank">website</a>
+    </p>
+    <p>
+      📫 How to reach me
+      <a href="mailto:ayoub.elguendouz@gmail.com" target="_blank"
+        >ayoub.elguendouz@gmail.com</a
+      >
+    </p>
+    <p>
+      📄 Know about my experiences with my
+      <a
+        href="https://elguendouz-ayoub.com/assets/El_Guendouz_Ayoub_CV.pdf"
+        target="_blank"
+        >resume</a
+      >
+    </p>
+    <hr />
     <h2>What I have been working on recently ?</h2>
     <div class="container">
       <div
