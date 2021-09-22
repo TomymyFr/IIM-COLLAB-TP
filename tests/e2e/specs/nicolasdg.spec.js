@@ -12,7 +12,8 @@ describe("Scenarios for page NicolasDG", () => {
 
     cy.get(".desc > a").should(
       "have.text",
-      "Projet de groupe Harmonisation du code");
+      "Projet de groupe Harmonisation du code"
+    );
 
     cy.get(".shuffle").click();
 
