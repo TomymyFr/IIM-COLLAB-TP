@@ -24,6 +24,8 @@ const routes = [
     name: "Axel",
     component: () => import("../views/Axel.vue"),
 
+  },
+
   {
     path: "/sachag",
     name: "SachaG",
