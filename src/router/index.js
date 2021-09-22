@@ -17,6 +17,15 @@ const routes = [
     name: "Antonio",
     component: () => import("../views/Antonio.vue"),
   },
+
+
+  {
+    path: "/axel",
+    name: "Axel",
+    component: () => import("../views/Axel.vue"),
+
+  },
+
   {
     path: "/margaux",
     name: "Margaux",
@@ -51,6 +60,7 @@ const routes = [
     path: "/ahmed",
     name: "ahmed",
     component: () => import("../views/Ahmed.vue"),
+
   },
   {
     path: "/lucasC",
