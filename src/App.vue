@@ -2,10 +2,15 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
+    <router-link to="/ayoub">Ayoub</router-link> |
     <router-link to="/antonio">Antonio</router-link> |
     <router-link to="/sachaL">SachaL</router-link> |
+    <router-link to="/julien">Julien</router-link>
+    <router-link to="/nicolasdegarrigues">NicolasDG</router-link> |
     <router-link to="/sachag">SachaG</router-link> |
+    <router-link to="/lucasC">LucasC</router-link> |
     <router-link to="/ahmed">Ahmed</router-link>
+
   </div>
   <router-view />
 </template>
