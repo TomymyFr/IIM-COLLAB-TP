@@ -4,7 +4,6 @@
   <div class="card">
     <h1>Yann Decelle</h1>
     <p>Étudiant en troisième année à l'IIM en recherche d'une alternance</p>
-    <a href=""></a>
   </div>
 </div>
 
