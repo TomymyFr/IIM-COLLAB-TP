@@ -68,13 +68,14 @@
     #train {
         position: absolute;
         overflow: hidden;
-        left: -1200px;
+        //left: 200px;
         animation: 8s linear infinite transport;
         animation-delay: 1s;
         display: flex;
         justify-content: center;
         align-items: baseline;
         flex-wrap: nowrap;
+        transform: translate(-200%, 0);
     }
     .musique {
         background: linear-gradient(to right, #FBBF24, #EF4444);
@@ -91,11 +92,12 @@
 
     @keyframes transport {
         from {
-            left: -1200px;
+            transform: translate(-200%, 0);
+            
         }
 
         to {
-            left: 2200px;
+            transform: translate(200%, 0);
         }
     }
     @keyframes musique-background {
