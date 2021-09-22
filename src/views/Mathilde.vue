@@ -5,7 +5,7 @@
 
       <ul class="hobbies">
         <li>Développeuse web à l'IIM 💻</li>
-        <li>Passionée de Design 👩🏻‍🎨</li>
+        <li>Passionnée de Design 👩🏻‍🎨</li>
         <li>Photographe le week-end 📷</li>
       </ul>
 
