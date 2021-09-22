@@ -4,6 +4,7 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/ayoub">Ayoub</router-link> |
     <router-link to="/antonio">Antonio</router-link> |
+    <router-link to="/claire">Claire</router-link> |
     <router-link to="/toml">TomL</router-link>
     <router-link to="/warsame">Warsamé</router-link> |
     <router-link to="/nico">Nico</router-link> |
