@@ -6,6 +6,7 @@
       <div class="title">
         <img
           src="https://avatars.githubusercontent.com/u/70761355"
+          alt="photo de Claire"
         />
         <h2>
             Claire Brisbart - 
@@ -17,16 +18,14 @@
 
        <!-- projets -->
       <div class="project">
-        <a target="_blank" :href="project?.url">
-          {{ project?.description }}
-        </a>
+        <a href="https://forum-associatif-numerique.fr">Forum associatif numérique</a>
+        <a href="https://github.com/Pouniflu/fil_rouge">Projet Fil Rouge</a>
+        <a href="https://github.com/Pouniflu/TD-VueJS">To do list Vue.js</a>
+        <a href="http://www.baijy.com">Baijy.com</a>
       </div>
 
       <!-- button -->
       <div class="button">
-        <button class="btn shuffle" v-on:click="getRandomProject">
-          shuffle
-        </button>
         <a href="https://www.clr-brisbart.fr">My Website</a>
         <a href="https://github.com/Pouniflu">Github</a>
       </div>
@@ -36,46 +35,9 @@
 </template>
 
 <script>
-const projects = [
-  {
-    url: "https://recap.antogin.dev/",
-    description: "A Monthly spotify recap",
-  },
-  {
-    url: "https://player.antogin.dev/",
-    description: "Music Player",
-  },
-  {
-    url: "https://qr.antogin.dev",
-    description: "QR code reader",
-  },
-  {
-    url: "https://pwd.antogin.dev",
-    description: "Password generator",
-  },
-  {
-    url: "https://sugar.antogin.dev/",
-    description: "Diabetes / Glucodes calculator",
-  },
-];
-
 export default {
-  name: "Antonio",
-  data() {
-    return {
-      project: {
-        url: "https://recap.antogin.dev/",
-        description: "A Monthly spotify recap",
-      },
-    };
-  },
-  methods: {
-    getRandomProject() {
-      this.project = projects.filter(
-        (el) => el.description !== this.project.description
-      )[Math.floor(Math.random() * (projects.length - 1 ?? 0))];
-    },
-  },
+  name: "Claire",
+
 };
 </script>
 
@@ -87,6 +49,8 @@ main {
     padding: 40px;
     margin: 0 auto;
 }
+
+/* Title */
 
 .title {
     display: flex;
@@ -106,11 +70,33 @@ main {
 
 .title p {
     margin: 5px 0;
-    color: rgb(152, 155, 158)
+    color: rgb(152, 155, 158);
 }
 
 .title_highlight {
     color: #42B983;
+}
+
+/* Projects */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.project a {
+    background-color: #89bef3;
+    padding: 6px 14px;
+    margin: 6px 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-style: italic;
+    color: #2C3E50;
+}
+
+.project a:hover {
+    background-color: #42B983;
+    color: #0a1b13;
 }
 
 </style>
