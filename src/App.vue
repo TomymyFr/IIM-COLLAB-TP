@@ -4,6 +4,7 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/ayoub">Ayoub</router-link> |
     <router-link to="/antonio">Antonio</router-link> |
+    <router-link to="/tomb">Tom B</router-link>
     <router-link to="/axel">Axel</router-link>
     <router-link to="/margaux">Margaux</router-link> |
     <router-link to="/sachag">SachaG</router-link> |
