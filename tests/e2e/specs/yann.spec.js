@@ -10,7 +10,10 @@ describe("Scenarios for page Yann", () => {
   it("play a youtube video", () => {
     cy.visit("http://localhost:8080/yann");
 
-    cy.get(".card > p").should("have.text", "Étudiant en troisième année à l'IIM en recherche d'une alternance");
+    cy.get(".card > p").should(
+      "have.text",
+      "Étudiant en troisième année à l'IIM en recherche d'une alternance"
+    );
 
     cy.get("#projExemple").click();
   });

@@ -1,11 +1,14 @@
 <template>
-<div id="myDesc">
-  <img src="https://media-exp1.licdn.com/dms/image/C4E03AQF3UpzRwVUGzw/profile-displayphoto-shrink_800_800/0/1584433248100?e=1637798400&v=beta&t=qSyk0qD4U8pMy000D5tSqbhvtfdIPQLu7hlJzrSPLB0" alt="profile picture">
-  <div class="card">
-    <h1>Yann Decelle</h1>
-    <p>Étudiant en troisième année à l'IIM en recherche d'une alternance</p>
+  <div id="myDesc">
+    <img
+      src="https://media-exp1.licdn.com/dms/image/C4E03AQF3UpzRwVUGzw/profile-displayphoto-shrink_800_800/0/1584433248100?e=1637798400&v=beta&t=qSyk0qD4U8pMy000D5tSqbhvtfdIPQLu7hlJzrSPLB0"
+      alt="profile picture"
+    />
+    <div class="card">
+      <h1>Yann Decelle</h1>
+      <p>Étudiant en troisième année à l'IIM en recherche d'une alternance</p>
+    </div>
   </div>
-</div>
 
   <div class="Compcontainer">
     <h1>Mes compétences</h1>
@@ -23,10 +26,15 @@
     </ul>
   </div>
   <div class="Realcontainer">
-  <h1>Mes Réalisation</h1>
-  <p>Voici un exemple de projet auquel j'ai pu participer:</p>
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/bG2HaG5NDD8" id="projExemple"/>
-</div>
+    <h1>Mes Réalisation</h1>
+    <p>Voici un exemple de projet auquel j'ai pu participer:</p>
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/bG2HaG5NDD8"
+      id="projExemple"
+    />
+  </div>
 </template>
 
 <script>
@@ -37,9 +45,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-#myDesc
-{
+#myDesc {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,49 +53,44 @@ export default {
   text-align: center;
 }
 
-img
-{
+img {
   width: 25%;
   border-radius: 100%;
   margin-bottom: 2%;
   transition: 0.5s;
 }
 
-img:hover
-{
+img:hover {
   width: 30%;
   border-radius: 100px;
   transition: 0.5s;
 }
 
-.Compcontainer
-{
+.Compcontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-h1, p
-{
+h1,
+p {
   margin-bottom: 1%;
 }
 
-.Realcontainer
-{
+.Realcontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-h1, p
-{
+h1,
+p {
   margin-bottom: 1%;
 }
 
-iframe
-{
+iframe {
   border: none;
   border-radius: 20px;
 }
