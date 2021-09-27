@@ -202,7 +202,6 @@ export default {
 #train {
   position: absolute;
   overflow: hidden;
-  //left: 200px;
   animation: 8s linear infinite transport;
   animation-delay: 1s;
   display: flex;
